@@ -1,3 +1,6 @@
+// Server Side URL
+
+// Import Files
 import mongoose from "mongoose";
 import "dotenv/config";
 import chalk from "chalk";

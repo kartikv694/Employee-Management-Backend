@@ -1,3 +1,6 @@
+// Middlewares for Verification
+
+// Import Files
 import jwt from 'jsonwebtoken'
 import "dotenv/config"
 import userModel from '../models/userModel.js';

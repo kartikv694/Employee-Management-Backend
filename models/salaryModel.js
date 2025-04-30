@@ -1,3 +1,6 @@
+// Data Structure Model For Employees Salaries
+
+// Import Files
 import mongoose, { Schema } from "mongoose";
 
 

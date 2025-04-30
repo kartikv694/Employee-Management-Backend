@@ -1,3 +1,5 @@
+// Password Hasing and Verification
+
 // Import Files
 import bcrypt from "bcrypt";
 

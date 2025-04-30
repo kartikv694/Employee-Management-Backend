@@ -1,3 +1,6 @@
+// Data Structure Model For Users
+
+// Import Files
 import mongoose from "mongoose";
 
 const userSchema = new mongoose.Schema({

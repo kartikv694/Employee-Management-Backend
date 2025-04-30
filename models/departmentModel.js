@@ -1,3 +1,6 @@
+// Data Structure Model For Departments 
+
+// Import Files
 import mongoose from "mongoose";
 
 const departmentSchema = mongoose.Schema({

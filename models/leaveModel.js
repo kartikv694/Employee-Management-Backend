@@ -1,3 +1,6 @@
+// Data Structure Model For Employees Leaves
+
+// Import Files
 import mongoose, { Schema } from "mongoose";
 
 

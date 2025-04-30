@@ -1,3 +1,6 @@
+// Here All the Controllers Are Built For Employee Leaves
+
+// Import Files
 import employeeModal from "../models/employeeModal.js"
 import leaveModel from "../models/leaveModel.js"
 

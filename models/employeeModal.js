@@ -1,3 +1,6 @@
+// Data Structure Model For Employees
+
+// Import Files
 import mongoose, { Schema } from "mongoose";
 
 const employeeSchema = new mongoose.Schema({
