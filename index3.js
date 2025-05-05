@@ -24,7 +24,7 @@ connectDB()
 // MiddleWares
 app.use(cors({
     origin:"https://employee-management-frontend-nu.vercel.app/",
-    credentials
+    credentials: true, 
 }))
 app.use(express.json())
 app.use(express.static('public/uploads'))
