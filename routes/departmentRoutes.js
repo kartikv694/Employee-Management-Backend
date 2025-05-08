@@ -12,23 +12,23 @@ const router = express.Router()
 // API ROUTES 
 
 // ADD DEPARTMENT API
-// https://employee-management-backend-blond.vercel.app/api/v2/department/add
+// https://employee-management-backend-ime7.onrender.com/api/v2/department/add
 router.post("/add",isSignIn,addDepartmentController)
 
 // SHOW ALL DEPARTMENTS API
-// https://employee-management-backend-blond.vercel.app/api/v2/department/all
+// https://employee-management-backend-ime7.onrender.com/api/v2/department/all
 router.get("/all",isSignIn,getAllDepartmentsController)
 
 // API FOR SHOWING OLD DATA FOR A PERTICULER DEPARTMENT
-// https://employee-management-backend-blond.vercel.app/api/v2/department/get/
+// https://employee-management-backend-ime7.onrender.com/api/v2/department/get/
 router.get("/get/:_id",isSignIn,getDepartmentController)
 
 // UPDATE DEPARTMENTS API
-// https://employee-management-backend-blond.vercel.app/api/v2/department/update/
+// https://employee-management-backend-ime7.onrender.com/api/v2/department/update/
 router.put("/update/:dept_id",isSignIn,updateDepartmentController)
 
 // DELETE DEPARTMENTS API
-// https://employee-management-backend-blond.vercel.app/api/v2/department/delete
+// https://employee-management-backend-ime7.onrender.com/api/v2/department/delete
 router.delete("/delete/:dept_id",isSignIn,deleteDepartmentController)
 
 

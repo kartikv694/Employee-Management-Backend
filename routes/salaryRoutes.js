@@ -11,15 +11,15 @@ const router = express.Router()
 // API ROUTES
 
 // add Salary API
-// https://employee-management-backend-blond.vercel.app/api/v2/employee/salary/add
+// https://employee-management-backend-ime7.onrender.com/api/v2/employee/salary/add
 router.post("/add",addSalaryController)
 
 // view Salary API
-// https://employee-management-backend-blond.vercel.app/api/v2/employee/salary/view
+// https://employee-management-backend-ime7.onrender.com/api/v2/employee/salary/view
 router.get("/view",viewSalaryController)
 
 // API FOR SHOWING OLD DATA FOR A PERTICULER EMPLOYEE SALARY
-// https://employee-management-backend-blond.vercel.app/api/v2/employee/salary/salary/
+// https://employee-management-backend-ime7.onrender.com/api/v2/employee/salary/salary/
 router.get("/salary/:_id",getEmployeeSalaryController)
 
 

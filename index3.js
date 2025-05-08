@@ -30,15 +30,15 @@ app.use(express.json())
 app.use(express.static('public/uploads'))
 
 // Routes
-// common API = https://employee-management-backend-blond.vercel.app/api/v2/emp
+// common API = https://employee-management-backend-ime7.onrender.com/api/v2/emp
 app.use("/api/v2/emp/",userRoutes)
-// common API = https://employee-management-backend-blond.vercel.app/api/v2/department
+// common API = https://employee-management-backend-ime7.onrender.com/api/v2/department
 app.use("/api/v2/department/",departmentRoutes)
-// common API = https://employee-management-backend-blond.vercel.app/api/v2/employee
+// common API = https://employee-management-backend-ime7.onrender.com/api/v2/employee
 app.use("/api/v2/employee/",employeeRoutes)
-// common API = https://employee-management-backend-blond.vercel.app/api/v2/employee/salary
+// common API = https://employee-management-backend-ime7.onrender.com/api/v2/employee/salary
 app.use("/api/v2/employee/salary/",salaryRoutes)
-// common API = https://employee-management-backend-blond.vercel.app/api/v2/employee/leave
+// common API = https://employee-management-backend-ime7.onrender.com/api/v2/employee/leave
 app.use("/api/v2/employee/leave/",leaveRoutes)
 
 // BackEnd Local Server http://localhost:8000
