@@ -228,3 +228,35 @@ export const getEmployeeByDeptId = async (req,res) => {
         })
     }
 }
+
+export const resetEmployeePasswordController = async (req, res) => {
+    try {
+      const user = await userModel.findOne({ email: req.body.email });
+      console.log(user);
+  
+      if (!user) {
+        return res.status(404).json({ message: "Invalid email" });
+      }
+  
+      await userModel.findByIdAndUpdate(
+        { _id: user._id },
+        {
+          password: await hashedPassword(req.body.password),
+        }
+      );
+  
+      return res.status(201).json({
+        success: true,
+        message: "Password changed successfully!!",
+      });
+  
+    } catch (error) {
+      if (!res.headersSent) {
+        res.status(500).send({
+          success: false,
+          message: "Error in changing password!",
+          error,
+        });
+      }
+    }
+  };
