@@ -11,23 +11,23 @@ const router = express.Router()
 // API Routes
 
 // APPLY LEAVE API
-// http://localhost:8000/api/v2/employee/leave/apply
+// https://employee-management-backend-blond.vercel.app/api/v2/employee/leave/apply
 router.post("/apply",isSignIn,applyLeaveController) 
 
 // SHOW LEAVE API
-// http://localhost:8000/api/v2/employee/leave/all-leaves/
+// https://employee-management-backend-blond.vercel.app/api/v2/employee/leave/all-leaves/
 router.get("/all-leaves/:_id",isSignIn,showLeavesController)
 
 // SHOW ALL EMPLOYEE LEAVES 
-// http://localhost:8000/api/v2/employee/leave/emp-leaves
+// https://employee-management-backend-blond.vercel.app/api/v2/employee/leave/emp-leaves
 router.get("/emp-leaves",isSignIn,getEmployeesLeavesController)
 
 // SHOW LEAVE DETAILS
-// http://localhost:8000/api/v2/employee/leave/details/
+// https://employee-management-backend-blond.vercel.app/api/v2/employee/leave/details/
 router.get("/details/:_id",isSignIn,LeaveDetailController)
 
 // STATUS OF LEAVE
-// http://localhost:8000/api/v2/employee/leave/status/
+// https://employee-management-backend-blond.vercel.app/api/v2/employee/leave/status/
 router.put("/status/:_id",leaveStatusController)
 
 export default router;
